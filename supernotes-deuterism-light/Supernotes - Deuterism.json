@@ -1,0 +1,1149 @@
+{
+  "name": "Supernotes - Deuterium",
+  "style": "Light",
+  "author": {
+    "name": "Aric Crosson Bouwers",
+    "email": "0many-treaty@icloud.com"
+  },
+  "editor": {
+    "backgroundColor": "#F4EEEB",
+    "altBackgroundColor": "#E9E0DB",
+    "tintColor": "#F55774",
+    "tintColor2": "#A8C4A9",
+    "textColor": "#4B474A",
+    "toolbarBackgroundColor": "#F4F0EE",
+    "toolbarIconColor": "#534E4C",
+    "menuItemColor": "#E9E0DB",
+    "timeBlockColor": "#65A083",
+    "shouldOverwriteFont": false,
+    "sidebarIconColorOverride": "#6A686F",
+    "lineSpacing": 1
+  },
+  "orderedStyles": [
+    "title-mark1",
+    "title-mark2",
+    "title-mark3",
+    "title-mark4",
+    "title-mark5",
+    "title-mark6",
+    "code",
+    "code-fence",
+    "body",
+    "quote-content",
+    "bold",
+    "bold-left-mark",
+    "bold-right-mark",
+    "italic",
+    "italic-left-mark",
+    "italic-right-mark",
+    "boldItalic",
+    "boldItalic-left-mark",
+    "boldItalic-right-mark",
+    "code-left-backtick",
+    "code-right-backtick",
+    "special-char",
+    "checked-todo-characters",
+    "todo",
+    "checked",
+    "quote-mark",
+    "tabbed",
+    "link",
+    "hashtag",
+    "attag",
+    "schedule-to-date-link",
+    "done-date",
+    "schedule-from-date-link",
+    "note-title-link",
+    "title1",
+    "title2",
+    "title3",
+    "title4",
+    "title5",
+    "title6",
+    "note-title-link"
+  ],
+  "styles": {
+    "body": {
+      "font": "SNPro-Regular",
+      "size": 16,
+      "color": "#323135",
+      "paragraphSpacing": 1
+    },
+    "hidden-title:-in-frontmatter": {
+      "regex": "(^[tT]itle:\\s+)((.*\n))",
+      "matchPosition": 1,
+      "color": "#4B474A",
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "lineSpacing": 2
+    },
+    "formatted-title-in-frontmatter": {
+      "regex": "(^[tT]itle:\\s+)((.*\n))",
+      "matchPosition": 2,
+      "color": "#4B474A",
+      "size": 22,
+      "font": "SNPro-Bold",
+      "lineSpacing": 2
+    },
+    "hidden-obsidian-frontmatter": {
+      "regex": "((?<!.)^\\s*---\\n)([\\s\\S]*?)(\\n---)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "color": "#AA888888"
+    },
+    "title1": {
+      "regex": "^\\h*(# )(.*)",
+      "matchPosition": 2,
+      "color": "#2A292E",
+      "size": 24,
+      "font": "SNPro-Heavy",
+      "paragraphSpacing": 2
+    },
+    "title-mark1": {
+      "regex": "^\\h*(# )(.*)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#A9A3A6",
+      "size": 24,
+      "font": "SNPro-Heavy",
+      "paragraphSpacingBefore": 20,
+      "paragraphSpacing": 2
+    },
+    "title2": {
+      "regex": "^\\h*(## )(.*)",
+      "matchPosition": 2,
+      "color": "#2A292E",
+      "size": 21,
+      "font": "SNPro-Heavy"
+    },
+    "title2-mark": {
+      "regex": "^\\h*(## )(.*)",
+      "matchPosition": 1,
+      "color": "#A9A3A6",
+      "size": 21,
+      "font": "SNPro-Heavy",
+      "paragraphSpacingBefore": 10,
+      "paragraphSpacing": 1
+    },
+    "title3": {
+      "regex": "^\\h*(### )(.*)",
+      "matchPosition": 2,
+      "color": "#6A686F",
+      "size": 18,
+      "font": "SNPro-Heavy",
+      "inlineBorder": true
+    },
+    "title3-mark": {
+      "regex": "^\\h*(### )(.*)",
+      "matchPosition": 1,
+      "color": "#A9A3A6",
+      "size": 18,
+      "font": "SNPro-Heavy",
+      "paragraphSpacingBefore": 10,
+      "paragraphSpacing": 1
+    },
+    "title4": {
+      "regex": "^\\h*(#### )(.*)",
+      "matchPosition": 2,
+      "color": "#7A7880",
+      "size": 17,
+      "font": "SNPro-Heavy",
+      "inlineBorder": true,
+    },
+    "title4-mark": {
+      "regex": "^\\h*(#### )(.*)",
+      "matchPosition": 1,
+      "color": "#A9A3A6",
+      "size": 17,
+      "font": "SNPro-Heavy",
+      "paragraphSpacingBefore": 10,
+      "paragraphSpacing": 1
+    },
+    "title5": {
+      "regex": "^\\h*(#####+ )(.*)",
+      "matchPosition": 2,
+      "color": "#7A7880",
+      "size": 17,
+      "font": "SNPro-HeavyItalic",
+      "inlineBorder": true
+    },
+    "title5-mark": {
+      "regex": "^\\h*(#####+ )(.*)",
+      "matchPosition": 1,
+      "color": "#A9A3A6",
+      "size": 17,
+      "font": "SNPro-HeavyItalic",
+      "paragraphSpacingBefore": 10,
+      "paragraphSpacing": 1
+    },
+    "working-on": {
+      "regex": "(^[\\h\\v]*[\\*|-|+] (\\[ \\] )?)(.*>>.*[\\h\\v\\n])",
+      "matchPosition": 3,
+      "color": "#4B474A",
+      "backgroundColor": "##B4C4B5",
+      "borderRadius": 6,
+      "leftBorderPadding": 6,
+      "rightBorderPadding": 6,
+      "inlineBorder": true
+    },
+    "waiting-on": {
+      "regex": "(^[\\h\\v]*[\\*|-|+] (\\[ \\] )?)(.*<<.*[\\h\\v\\n])",
+      "matchPosition": 3,
+      "color": "#4B474A",
+      "backgroundColor": "#E3D6E5",
+      "borderRadius": 6,
+      "leftBorderPadding": 6,
+      "rightBorderPadding": 6
+    },
+    "flagged-1": {
+      "regex": "(^[\\h\\v]*[\\*|-|+] (\\[ \\] )?)(.*(?<!!)!(?!!).*[\\h\\v])",
+      "matchPosition": 3,
+      "backgroundColor": "#FCDEE1",
+      "color": "#4B474A",
+      "font": "SNPro-Medium"
+    },
+    "flagged-2": {
+      "regex": "(^[\\h\\v]*[\\*|-|+] (\\[ \\] )?)(.*(?<!!|<<|>>)!!(?!!).*[\\h\\v])",
+      "matchPosition": 3,
+      "backgroundColor": "#FCD1D6",
+      "color": "#4B474A",
+      "font": "SNPro-Semibold"
+    },
+    "flagged-3": {
+      "regex": "(^[\\h\\v]*[\\*|-|+] (\\[ \\] )?)(.*!{3,}.*[\\h\\v])",
+      "matchPosition": 3,
+      "backgroundColor": "#FCB2BB",
+      "color": "#4B474A",
+      "font": "SNPro-Bold"
+    },
+    "bold": {
+      "color": "#4B474A",
+      "font": "SNPro-Heavy",
+      "size": 17
+    },
+    "bold-left-mark": {
+      "color": "#A9A3A6"
+    },
+    "bold-right-mark": {
+      "color": "#A9A3A6"
+    },
+    "italic": {
+      "color": "#6584A2",
+      "font": "SNPro-MediumItalic",
+      "size": 16
+    },
+    "italic-left-mark": {
+      "color": "#A9A3A6"
+    },
+    "italic-right-mark": {
+      "color": "#A9A3A6"
+    },
+    "boldItalic": {
+      "font": "SNPro-HeavyItalic",
+      "size": 17
+    },
+    "boldItalic-left-mark": {
+      "color": "#A9A3A6"
+    },
+    "boldItalic-right-mark": {
+      "color": "#A9A3A6"
+    },
+    "code": {
+      "font": "JetBrainsMono-Regular",
+      "size": 15,
+      "backgroundColor": "#E9E0DB",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 1,
+      "rightBorderPadding": 1
+    },
+    "code-fence": {
+      "theme": "gruvbox-light",
+      "body": {
+        "font": "JetBrainsMono-Regular",
+        "paragraphSpacingBefore": 0,
+        "paragraphSpacing": 0,
+        "size": 14
+      },
+      "corner-radius": 8,
+      "fence-open": {
+        "color": "#6584A2"
+      },
+      "fence-close": {
+        "color": "#6584A2"
+      },
+      "language-specifier": {
+        "font": "JetBrainsMono-Italic",
+        "color": "#FCACB6",
+        "size": 14,
+        "paragraphSpacing": 0
+      }
+    },
+    "code-left-backtick": {
+      "color": "#6584A2"
+    },
+    "code-right-backtick": {
+      "color": "#6584A2"
+    },
+    "checked": {
+      "color": "#98B198",
+      "headIndent": 33
+    },
+    "checked-canceled": {
+      "strikethroughStyle": 1,
+      "matchPosition": 3,
+      "regex": "(^\\h*[\\+|\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] )(.*)",
+      "color": "#928383"
+    },
+    "checked-canceled-marker": {
+      "matchPosition": 1,
+      "regex": "(^\\h*[\\+|\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\-\\] )(.*)",
+      "color": "#928383"
+    },
+    "checked-scheduled": {
+      "regex": "(^\\h*[\\*\\-]{1} |^\\h*[0-9]+[\\.\\)] )(\\[\\>\\] )(.*)",
+      "matchPosition": 0,
+      "color": "#6584A2"
+    },
+    "todo": {
+      "font": "noteplanstate",
+      "color": "#6584A2",
+      "headIndent": 33,
+      "size": 16
+    },
+    "checked-todo-characters": {
+      "font": "noteplanstate",
+      "headIndent": 33,
+      "size": 16
+    },
+    "tabbed": {
+      "headIndent": 43
+    },
+    "quote-mark": {
+      "color": "#6584A2",
+      "font": "noteplanstate",
+      "headIndent": 33,
+      "size": 16
+    },
+    "quote-content": {
+      "color": "#6584A2",
+      "type": "italic",
+      "headIndent": 33
+    },
+    "link": {},
+    "schedule-to-date-link": {},
+    "done-date": {},
+    "schedule-from-date-link": {},
+    "note-title-link": {},
+    "hashtag": {
+      "backgroundColor": "#ECE7E4",
+      "leftBorderPadding": 1,
+      "rightBorderPadding": 2,
+      "inlineBorder": true
+    },
+    "attag": {
+      "backgroundColor": "#ECE7E4"
+    },
+    "phonenumber": {
+      "backgroundColor": "#6584A2"
+    },
+    "highlighted": {
+      "backgroundColor": "#F4EABE",
+      "color": "#4B474A",
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+      "borderRadius": 6,
+      "inlineBorder": true
+    },
+    "strikethrough": {
+      "color": "#6A686F",
+      "strikethroughColor": "#2A292E"
+    },
+    "strikethrough-left-tilde": {
+      "color": "#CAC3C6"
+    },
+    "strikethrough-right-tilde": {
+      "color": "#CAC3C6"
+    },
+    "underline": {
+      "isRevealOnCursorRange": true,
+      "underlineStyle": 2,
+      "matchPosition": 3,
+      "regex": "(^|[\\W_])(?:(?!\\1)|(?=^))(\\~|_)(?=\\S)((?:(?!\\2).)*?\\S)(\\2)(?!\\2)(?=[\\W_]|$)",
+      "underlineColor": "#80A7CD"
+    },
+    "underline-left-tilde": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": false,
+      "matchPosition": 2,
+      "regex": "(^|[\\W_])(?:(?!\\1)|(?=^))(\\~|_)(?=\\S)((?:(?!\\2).)*?\\S)(\\2)(?!\\2)(?=[\\W_]|$)",
+      "color": "#CAC3C6"
+    },
+    "underline-right-tilde": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": false,
+      "matchPosition": 4,
+      "regex": "(^|[\\W_])(?:(?!\\1)|(?=^))(\\~|_)(?=\\S)((?:(?!\\2).)*?\\S)(\\2)(?!\\2)(?=[\\W_]|$)",
+      "color": "#CAC3C6"
+    },
+    "highlighted-green": {
+      "regex": "(=g=|=1=|=!=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "backgroundColor": "#B4C4B5",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+      "isFullWidthBorder": false
+    },
+    "highlighted-green-left-marker": {
+      "regex": "(=g=|=1=|=!=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#E5F3E6",
+      "backgroundColor": "#B4C4B5",
+      "inlineBorder": true,
+      "borderRadius": 6,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-green-right-marker": {
+      "regex": "(=g=|=1=|=!=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#E5F3E6",
+      "backgroundColor": "#B4C4B5",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+    },
+    "highlighted-green-full-width": {
+      "regex": "(=gg=|=11=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "backgroundColor": "#B4C4B5",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+      "isFullWidthBorder": true
+    },
+    "highlighted-green-full-width-left-marker": {
+      "regex": "(=gg=|=11=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#E5F3E6",
+      "backgroundColor": "#B4C4B5",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-green-full-width-right-marker": {
+      "regex": "(=gg=|=11=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#E5F3E6",
+      "backgroundColor": "#B4C4B5",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-blue": {
+      "regex": "(=b=|=2=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "backgroundColor": "#91AAC1",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+      "isFullWidthBorder": false
+    },
+    "highlighted-blue-left-marker": {
+      "regex": "(=b=|=2=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#CEE4F7",
+      "backgroundColor": "#91AAC1",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-blue-right-marker": {
+      "regex": "(=b=|=2=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#CEE4F7",
+      "backgroundColor": "#91AAC1",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-blue-full-width": {
+      "regex": "(=bb=|=22=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "backgroundColor": "#91AAC1",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+      "isFullWidthBorder": true
+    },
+    "highlighted-blue-full-width-left-marker": {
+      "regex": "(=bb=|=22=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#CAC3C6",
+      "backgroundColor": "#91AAC1",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-blue-full-width-right-marker": {
+      "regex": "(=bb=|=22=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#CAC3C6",
+      "backgroundColor": "#91AAC1",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-yellow": {
+      "regex": "(=y=|=3=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "backgroundColor": "##F4EABE",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+      "isFullWidthBorder": false
+    },
+    "highlighted-yellow-left-marker": {
+      "regex": "(=y=|=3=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#CAC3C6",
+      "backgroundColor": "##F4EABE",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-yellow-right-marker": {
+      "regex": "(=y=|=3=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#CAC3C6",
+      "backgroundColor": "##F4EABE",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-yellow-full-width": {
+      "regex": "(=yy=|=33=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "backgroundColor": "##F4EABE",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+      "isFullWidthBorder": true
+    },
+    "highlighted-yellow-full-width-left-marker": {
+      "regex": "(=yy=|=33=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#CAC3C6",
+      "backgroundColor": "##F4EABE",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-yellow-full-width-right-marker": {
+      "regex": "(=yy=|=33=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#CAC3C6",
+      "backgroundColor": "##F4EABE",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-orange": {
+      "regex": "(=o=|=4=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "backgroundColor": "#EBD1C3",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+      "isFullWidthBorder": false
+    },
+    "highlighted-orange-left-marker": {
+      "regex": "(=o=|=4=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#7F7269",
+      "backgroundColor": "#EBD1C3",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-orange-right-marker": {
+      "regex": "(=o=|=4=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#7F7269",
+      "backgroundColor": "#EBD1C3",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-orange-full-width": {
+      "regex": "(=oo=|=44=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "backgroundColor": "#EBD1C3",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+      "isFullWidthBorder": true
+    },
+    "highlighted-orange-full-width-left-marker": {
+      "regex": "(=oo=|=44=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#7F7269",
+      "backgroundColor": "#EBD1C3",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-orange-full-width-right-marker": {
+      "regex": "(=oo=|=44=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#7F7269",
+      "backgroundColor": "#EBD1C3",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-red": {
+      "regex": "(=r=|=5=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "backgroundColor": "#FCACB6",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+      "isFullWidthBorder": false
+    },
+    "highlighted-red-left-marker": {
+      "regex": "(=r=|=5=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#815B5D",
+      "backgroundColor": "#FCACB6",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-red-right-marker": {
+      "regex": "(=r=|=5=)((?<!`)[^`]*?(?!`))(==)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#815B5D",
+      "backgroundColor": "#FCACB6",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-red-full-width": {
+      "regex": "(=rr=|=55=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "backgroundColor": "#FCACB6",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4,
+      "isFullWidthBorder": true
+    },
+    "highlighted-red-full-width-left-marker": {
+      "regex": "(=rr=|=55=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 1,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#815B5D",
+      "backgroundColor": "#FCACB6",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "highlighted-red-full-width-right-marker": {
+      "regex": "(=rr=|=55=)((?<!`)[^`[==]]*?(?!`))(==)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#815B5D",
+      "backgroundColor": "#FCACB6",
+      "borderRadius": 6,
+      "inlineBorder": true,
+      "leftBorderPadding": 4,
+      "rightBorderPadding": 4
+    },
+    "NoteLinks-left-brackets": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": false,
+      "isMarkdownCharacter": true,
+      "matchPosition": 1,
+      "regex": "([[:blank:]]?\\[\\[)(.*?)(\\]\\])",
+      "color": "#80A7CD"
+    },
+    "NoteLinks-text": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": false,
+      "isMarkdownCharacter": true,
+      "underlineStyle": 1,
+      "matchPosition": 2,
+      "regex": "([[:blank:]]?\\[\\[)(.*?)(\\]\\])",
+      "color": "#80A7CD"
+    },
+    "NoteLinks-right-brackets": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": false,
+      "isMarkdownCharacter": true,
+      "matchPosition": 3,
+      "regex": "([[:blank:]]?\\[\\[)(.*?)(\\]\\])",
+      "color": "#80A7CD"
+    },
+    "URL-links-left-bracket": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true,
+      "matchPosition": 1,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "color": "#6584A2"
+    },
+    "URL-links-right-bracket": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true,
+      "matchPosition": 3,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "color": "#6584A2"
+    },
+    "URL-links-title": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": false,
+      "isMarkdownCharacter": false,
+      "underlineStyle": 1,
+      "matchPosition": 2,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "color": "#6584A2"
+    },
+    "URL-links-far-left-bracket": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true,
+      "matchPosition": 4,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "color": "#80A7CD"
+    },
+    "URL-links-far-right-bracket": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true,
+      "matchPosition": 6,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "color": "#80A7CD"
+    },
+    "URL-links-link-text": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": false,
+      "isMarkdownCharacter": false,
+      "underlineStyle": 1,
+      "matchPosition": 5,
+      "regex": "(\\[)(.*?)(\\])(\\()(.*?)(\\))",
+      "color": "#FCACB6"
+    },
+    "sidebarIconColorOverride": "#3A515D",
+    "line-contains-⟁": {
+      "backgroundColor": "#e67e80",
+      "matchPosition": 0,
+      "regex": ".*⟁.*",
+      "color": "#FFFFFF",
+      "borderRadius": 6,
+      "leftBorderPadding": 6,
+      "rightBorderPadding": 6
+    },
+    "line-contains-⭐︎": {
+      "backgroundColor": "#171C1E",
+      "matchPosition": 0,
+      "regex": ".*⭐︎.*",
+      "color": "#FCACB6",
+      "borderRadius": 6,
+      "leftBorderPadding": 6,
+      "rightBorderPadding": 6
+    },
+    "line-contains-⎋": {
+      "backgroundColor": "#A8C4A9",
+      "matchPosition": 0,
+      "regex": ".*⎋.*",
+      "color": "#4B474A",
+      "borderRadius": 6,
+      "leftBorderPadding": 6,
+      "rightBorderPadding": 6
+    },
+    "line-contains-¿-incomplete": {
+      "backgroundColor": "#9da9a0",
+      "matchPosition": 0,
+      "regex": ".*¿.*",
+      "color": "#000000",
+      "borderRadius": 6,
+      "leftBorderPadding": 6,
+      "rightBorderPadding": 6
+    },
+    "line-hidden-section-show": {
+      "regex": "(.* %% .*)",
+      "matchPosition": 1,
+      "isRevealOnCursorRange": true
+    },
+    "percent-syntax-hidden-comment": {
+      "regex": "(%%)([^%]{1,})(%%)",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "color": "#888888"
+    },
+    "percent-syntax-hidden-comment-left": {
+      "regex": "(%%)([^%]{1,})(%%)",
+      "matchPosition": 1,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": true,
+      "color": "#88818475"
+    },
+    "percent-syntax-hidden-comment-right": {
+      "regex": "(%%)([^%]{1,})(%%)",
+      "matchPosition": 3,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#88818475"
+    },
+    "hidden-comment-star": {
+      "regex": "(\\*)(\\(\\()([^\\)]{1,})(\\)\\))",
+      "matchPosition": 1,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": false,
+      "isMarkdownCharacter": true,
+      "color": "#88818475"
+    },
+    "hidden-comment-left": {
+      "regex": "(\\*)(\\(\\()([^\\)]{1,})(\\)\\))",
+      "matchPosition": 2,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": false,
+      "color": "#88818475"
+    },
+    "hidden-comment": {
+      "regex": "(\\*)(\\(\\()([^\\)]{1,})(\\)\\))",
+      "matchPosition": 3,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": false,
+      "color": "#888888"
+    },
+    "hidden-comment-right": {
+      "regex": "(\\*)(\\(\\()([^\\)]{1,})(\\)\\))",
+      "matchPosition": 4,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "isMarkdownCharacter": false,
+      "color": "#88818475"
+    },
+    "hidden-dataview-section": {
+      "regex": "```dataview\\n[\\s\\S]*?```",
+      "matchPosition": 0,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "color": "#888888"
+    },
+    "line-comment-hide": {
+      "regex": "(.*)( // )(.*)",
+      "matchPosition": 3,
+      "isHiddenWithoutCursor": false,
+      "color": "#AA888888"
+    },
+    "line-comment-show": {
+      "regex": "(.* // .*)",
+      "matchPosition": 1,
+      "isRevealOnCursorRange": true
+    },
+    "line-comment-slash": {
+      "regex": "(.*)( // )",
+      "matchPosition": 2,
+      "isMarkdownCharacter": true,
+      "color": "#888888"
+    },
+    "line-comment-left-hide": {
+      "regex": "(.*)( <// )(.*)",
+      "matchPosition": 1,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#AA888888"
+    },
+    "line-comment-left-show": {
+      "regex": "(.* <// .*)",
+      "matchPosition": 1,
+      "isRevealOnCursorRange": true
+    },
+    "line-comment-left-slash": {
+      "regex": "(.*)( <// )",
+      "matchPosition": 2,
+      "isMarkdownCharacter": true,
+      "color": "#888888"
+    },
+    "dataview-colon-hide": {
+      "regex": "(.*)(:)(:)(.*)",
+      "matchPosition": 3,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#AA888888"
+    },
+    "quick-link-no-reference": {
+      "regex": "(>)(\\S[^<]*?)(?<!\\s)(<)",
+      "matchPosition": 2,
+      "urlPosition": 2,
+      "underlineStyle": 2,
+      "underlineColor": "#80A7CD",
+      "type": "noteLink",
+      "prefix": "noteplan://x-callback-url/openNote?noteTitle="
+    },
+    "quick-link-no-reference-left-delimiter": {
+      "regex": "(>)(\\S[^<]*?)(?<!\\s)(<)",
+      "matchPosition": 1,
+      "color": "#80A7CD",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "quick-link-no-reference-right-delimiter": {
+      "regex": "(>)(\\S[^<]*?)(?<!\\s)(<)",
+      "matchPosition": 3,
+      "color": "#80A7CD",
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true
+    },
+    "quick-link-no-reference-show-all-on-cursor": {
+      "regex": "(>)(\\S[^<]*?)(?<!\\s)(<)",
+      "matchPosition": 0,
+      "isRevealOnCursorRange": true
+    },
+    "note-search-link": {
+      "regex": "search\\((\\S[^/]*\\S)\\)",
+      "matchPosition": 1,
+      "urlPosition": 1,
+      "type": "link",
+      "prefix": "noteplan://x-callback-url/search?text="
+    },
+    "timeblock-tag": {
+      "regex": "#🕒",
+      "isMarkdownCharacter": false,
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true
+    },
+    "hidden-attag-category-left": {
+      "regex": "(@)([^\\s]*/)([[-+?\\w]*[([\\U00000CA1-\\U0000139F]|[\\U00004E00-\\U00009FFF]|[\\U0001F600-\\U0001F64F]|[\\U0001F680-\\U0001F6FF]|[\\U0001F700-\\U0001F77F]|[\\U0001F90C-\\U0001F9FF]|[\\U0001FA70-\\U0001FAFF]|[\\U0001F300-\\U0001F5FF]|[\\U0001F0A0-\\U0001F0BE]|[\\U0001F0C1-\\U0001F0DF]|[\\U00010000-\\U0001E95F]|[\\U00002600-\\U000026FF]|[\\U00000080-\\U000000FF])]*]+(?=[\\s]))",
+      "matchPosition": 1,
+      "isMarkdownCharacter": false,
+      "isHiddenWithoutCursor": false,
+      "isRevealOnCursorRange": true,
+      "color": "#88818475"
+    },
+    "hidden-attag-category-middle": {
+      "regex": "(@)([^\\s]*/)([[-+?\\w]*[([\\U00000CA1-\\U0000139F]|[\\U00004E00-\\U00009FFF]|[\\U0001F600-\\U0001F64F]|[\\U0001F680-\\U0001F6FF]|[\\U0001F700-\\U0001F77F]|[\\U0001F90C-\\U0001F9FF]|[\\U0001FA70-\\U0001FAFF]|[\\U0001F300-\\U0001F5FF]|[\\U0001F0A0-\\U0001F0BE]|[\\U0001F0C1-\\U0001F0DF]|[\\U00010000-\\U0001E95F]|[\\U00002600-\\U000026FF]|[\\U00000080-\\U000000FF])]*]+(?=[\\s]))",
+      "matchPosition": 2,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#88818475"
+    },
+    "hidden-attag-category-right": {
+      "regex": "(@)([^\\s]*/)([[-+?\\w]*[([\\U00000CA1-\\U0000139F]|[\\U00004E00-\\U00009FFF]|[\\U0001F600-\\U0001F64F]|[\\U0001F680-\\U0001F6FF]|[\\U0001F700-\\U0001F77F]|[\\U0001F90C-\\U0001F9FF]|[\\U0001FA70-\\U0001FAFF]|[\\U0001F300-\\U0001F5FF]|[\\U0001F0A0-\\U0001F0BE]|[\\U0001F0C1-\\U0001F0DF]|[\\U00010000-\\U0001E95F]|[\\U00002600-\\U000026FF]|[\\U00000080-\\U000000FF])]*]+(?=[\\s]))",
+      "matchPosition": 3,
+      "isMarkdownCharacter": false,
+      "isHiddenWithoutCursor": false,
+      "isRevealOnCursorRange": true,
+      "color": "#88818475"
+    },
+    "hidden-hashtag-category-left": {
+      "regex": "(#)([^\\s]*/)([[-+?\\w]*[([\\U00000CA1-\\U0000139F]|[\\U00004E00-\\U00009FFF]|[\\U0001F600-\\U0001F64F]|[\\U0001F680-\\U0001F6FF]|[\\U0001F700-\\U0001F77F]|[\\U0001F90C-\\U0001F9FF]|[\\U0001FA70-\\U0001FAFF]|[\\U0001F300-\\U0001F5FF]|[\\U0001F0A0-\\U0001F0BE]|[\\U0001F0C1-\\U0001F0DF]|[\\U00010000-\\U0001E95F]|[\\U00002600-\\U000026FF]|[\\U00000080-\\U000000FF])]*]+(?=[\\s]))",
+      "matchPosition": 1,
+      "isMarkdownCharacter": false,
+      "isHiddenWithoutCursor": false,
+      "isRevealOnCursorRange": true,
+      "color": "#88818475"
+    },
+    "hidden-hashtag-category-middle": {
+      "regex": "(#)([^\\s]*/)([[-+?\\w]*[([\\U00000CA1-\\U0000139F]|[\\U00004E00-\\U00009FFF]|[\\U0001F600-\\U0001F64F]|[\\U0001F680-\\U0001F6FF]|[\\U0001F700-\\U0001F77F]|[\\U0001F90C-\\U0001F9FF]|[\\U0001FA70-\\U0001FAFF]|[\\U0001F300-\\U0001F5FF]|[\\U0001F0A0-\\U0001F0BE]|[\\U0001F0C1-\\U0001F0DF]|[\\U00010000-\\U0001E95F]|[\\U00002600-\\U000026FF]|[\\U00000080-\\U000000FF])]*]+(?=[\\s]))",
+      "matchPosition": 2,
+      "isMarkdownCharacter": true,
+      "isHiddenWithoutCursor": true,
+      "isRevealOnCursorRange": true,
+      "color": "#88818475"
+    },
+    "hidden-hashtag-category-right": {
+      "regex": "(#)([^\\s]*/)([[-+?\\w]*[([\\U00000CA1-\\U0000139F]|[\\U00004E00-\\U00009FFF]|[\\U0001F600-\\U0001F64F]|[\\U0001F680-\\U0001F6FF]|[\\U0001F700-\\U0001F77F]|[\\U0001F90C-\\U0001F9FF]|[\\U0001FA70-\\U0001FAFF]|[\\U0001F300-\\U0001F5FF]|[\\U0001F0A0-\\U0001F0BE]|[\\U0001F0C1-\\U0001F0DF]|[\\U00010000-\\U0001E95F]|[\\U00002600-\\U000026FF]|[\\U00000080-\\U000000FF])]*]+(?=[\\s]))",
+      "matchPosition": 3,
+      "isMarkdownCharacter": false,
+      "isHiddenWithoutCursor": false,
+      "isRevealOnCursorRange": true,
+      "color": "#88818475"
+    },
+    "eventID": {
+      "isRevealOnCursorRange": true,
+      "isHiddenWithoutCursor": true,
+      "matchPosition": 1,
+      "regex": "(event:[A-F0-9-]{36,37})",
+      "color": "#FFFFFF"
+    },
+    "note-timer-link": {
+      "regex": "\\s(\\d+(?:\\.\\d+)?)\\s?minutes?",
+      "matchPosition": 1,
+      "urlPosition": 1,
+      "type": "link",
+      "prefix": "shortcuts://run-shortcut?name=Start%20Timer&input=",
+      "suffix": "m"
+    },
+    "note-timer-link-hour": {
+      "regex": "\\s(\\d+(?:\\.\\d+)?)\\s?hours?",
+      "matchPosition": 1,
+      "urlPosition": 1,
+      "type": "link",
+      "prefix": "shortcuts://run-shortcut?name=Start%20Hour%20Timer&input=",
+      "suffix": "h"
+    },
+    "linear-issue-code-link-webvar": {
+      "regex": "(?<!\\S)(WVD-\\d{1,5})(?!\\S)",
+      "matchPosition": 1,
+      "urlPosition": 1,
+      "font": "JetBrainsMono-Italic",
+      "underlineStyle": 2,
+      "underlineColor": "#5A65C0",
+      "type": "noteLink",
+      "prefix": "linear://webvar/issue/"
+    },
+    "linear-link-hide-start-of-url-webvar": {
+      "regex": "(https://linear\\.app/webvar/issue/)(WVD-\\d+)",
+      "matchPosition": 1,
+      "isHiddenWithoutCursor": true
+    },
+    "linear-link-webvar": {
+      "regex": "(https://linear\\.app/webvar/issue/)(WVD-\\d+)(/[^\\s]+)",
+      "matchPosition": 2,
+      "isHiddenWithoutCursor": false,
+      "urlPosition": 2,
+      "underlineStyle": 2,
+      "underlineColor": "#5A65C0",
+      "font": "JetBrainsMono-Italic",
+      "type": "noteLink",
+      "prefix": "linear://webvar/issue/"
+    },
+    "linear-link-end-of-url-webvar": {
+      "regex": "(https://linear\\.app/webvar/issue/)(WVD-\\d+)(/[^\\s]+)",
+      "matchPosition": 3,
+      "isHiddenWithoutCursor": false,
+      "urlPosition": 2,
+      "underlineStyle": 2,
+      "underlineColor": "#5A65C0",
+      "font": "JetBrainsMono-Italic",
+      "type": "noteLink",
+      "prefix": "linear://webvar/issue/"
+    }
+  }
+}
